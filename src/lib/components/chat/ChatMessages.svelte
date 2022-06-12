@@ -10,7 +10,7 @@
 					<li
 						class="bg-red-50 text-red-700 rounded-l-lg rounded-t-lg bg-contain px-4 py-2 inline-block"
 					>
-						<p>
+						<p style="white-space: pre-line;">
 							[YOU] {chatMessage.text}
 						</p>
 					</li>
@@ -20,7 +20,7 @@
 					<li
 						class="bg-gray-500 text-white rounded-r-lg rounded-t-lg bg-contain px-4 py-2 inline-block"
 					>
-						<p>
+						<p style="white-space: pre-line;">
 							[AI] {chatMessage.text}
 						</p>
 					</li>
