@@ -23,6 +23,14 @@
 						Home
 					</a>
 					<a
+						href="/chat"
+						class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-lg font-medium"
+						class:border-basico-red={$page.url.pathname === '/chat'}
+						class:font-bold={$page.url.pathname === '/chat'}
+					>
+						Chat
+					</a>
+					<a
 						href="/questions"
 						class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-lg font-medium"
 						class:border-basico-red={$page.url.pathname === '/questions'}
@@ -104,6 +112,16 @@
 				class:text-red-700={$page.url.pathname === '/'}
 			>
 				Home
+			</a>
+			<a
+				on:click={() => (mobileOpen = !mobileOpen)}
+				href="/chat"
+				class="text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+				class:bg-red-50={$page.url.pathname === '/chat'}
+				class:border-basico-red={$page.url.pathname === '/chat'}
+				class:text-red-700={$page.url.pathname === '/chat'}
+			>
+				Chat
 			</a>
 			<a
 				on:click={() => (mobileOpen = !mobileOpen)}

@@ -19,10 +19,42 @@
 
 	<section
 		class="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8"
-		aria-labelledby="contact-heading"
+		aria-labelledby="features"
 	>
-		<h2 class="sr-only" id="contact-heading">Contact us</h2>
-		<div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+		<h2 class="sr-only" id="features">features</h2>
+		<div class="grid grid-cols-1 gap-y-20 lg:grid-cols-4 lg:gap-y-0 lg:gap-x-8">
+			<div class="flex flex-col bg-white rounded-2xl shadow-xl">
+				<div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
+					<div
+						class="absolute top-0 p-5 inline-block bg-basico-red rounded-xl shadow-lg transform -translate-y-1/2"
+					>
+						<svg
+							class="h-6 w-6 text-white"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							aria-hidden="true"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+							/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-medium text-gray-900">Chat</h3>
+					<p class="mt-4 text-base text-gray-500">Have a chat with the AI.</p>
+				</div>
+				<div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
+					<a href="/chat" class="text-base font-medium text-basico-red hover:underline">
+						Try it out
+						<span aria-hidden="true"> &rarr;</span>
+					</a>
+				</div>
+			</div>
+
 			<div class="flex flex-col bg-white rounded-2xl shadow-xl">
 				<div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
 					<div
