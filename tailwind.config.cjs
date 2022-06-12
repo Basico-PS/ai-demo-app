@@ -1,10 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{html.svelte.js.ts}',
+    './src/**/*.html',
+    './src/**/*.svelte',
+    './src/**/*.js',
+    './src/**/*.ts',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'basico-red': '#dc3545',
+        'basico-red-light': '#f857a6',
+        'basico-orange': '#fd7e14',
+      },
+    },
   },
   plugins: [],
 }
