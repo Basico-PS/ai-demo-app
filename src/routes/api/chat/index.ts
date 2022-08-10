@@ -1,9 +1,4 @@
-import { Configuration, OpenAIApi } from 'openai';
-
-const configuration = new Configuration({
-	apiKey: process.env.OPENAI_API_KEY
-});
-const openai = new OpenAIApi(configuration);
+import openaiClient from '$lib/utils/openaiClient';
 
 export const post = async ({ request }: any) => {
 	const body: {
@@ -26,7 +21,7 @@ export const post = async ({ request }: any) => {
 
 	console.log(promptValue);
 
-	const response = await openai.createCompletion({
+	const response = await openaiClient.createCompletion({
 		model: 'text-davinci-002',
 		prompt: promptValue + '\nAI:',
 		stop: [' Human:', ' AI:'],
